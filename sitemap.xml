@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/2021/03/03/%E5%9B%9B%E5%85%AD%E7%BA%A7%E5%86%99%E4%BD%9C/</loc>
+    
+    <lastmod>2021-03-03</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://example.com/2021/03/03/my/</loc>
     
     <lastmod>2021-03-03</lastmod>
