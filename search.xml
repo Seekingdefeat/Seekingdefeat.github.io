@@ -358,7 +358,7 @@
       </categories>
   </entry>
   <entry>
-    <title></title>
+    <title>学期计划</title>
     <url>/2021/03/03/my/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="important：学期任务"><a href="#important：学期任务" class="headerlink" title="important：学期任务"></a>important：学期任务</h1><ul>
 <li><p>英语：</p>
@@ -383,6 +383,9 @@
 </li>
 </ul>
 <h3 id="评价：-1"><a href="#评价：-1" class="headerlink" title="评价："></a>评价：</h3>]]></content>
+      <categories>
+        <category>school life</category>
+      </categories>
   </entry>
   <entry>
     <title>The birth of my blog</title>
