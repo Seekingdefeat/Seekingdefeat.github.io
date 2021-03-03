@@ -388,6 +388,31 @@
       </categories>
   </entry>
   <entry>
+    <title>The birth of my blog</title>
+    <url>/2021/02/04/the%20birth%20of%20my%20blog/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>   Welcome to zhj’s blog!</p>
+<h2 id="part-1"><a href="#part-1" class="headerlink" title="part 1:"></a>part 1:</h2><p>   第一次真真切切感受到深入一阵天是什么感觉！</p>
+<p>从早上10点开始搞这个玩意，一开始还好，都很顺利，nodejs，</p>
+<p>git按着指导进行，之后···在搭建完了一个localhost：4000本地后，可高兴了。</p>
+<p>可是我万万没想到，这只是噩梦的开始！</p>
+<p>之后的神操作，让我的localhost也出不来了，一个又一个Error出现在我面前，</p>
+<p>我人都傻了·····</p>
+<p>npm -v ; git version;hexo -v ;taobao.org;一遍一遍地敲，原来爷的耐心可以这么好~</p>
+<p>令我记忆深刻的是hexo init！</p>
+<p>这可是个大爹啊！！！</p>
+<p>下载个这小东西，一直给爷卡着，陪着你花了我大半个下午，</p>
+<p>我还在网上直接找了hexo初始化包，可倒好，以为万事大吉了，还是Error。</p>
+<p>好家伙！我直接好家伙！</p>
+<p><img src="https://tse1-mm.cn.bing.net/th/id/OIP.XzLT2SaAHF86NCNY-Y1wzwHaJa?pid=Api&rs=1" alt="image text"></p>
+<h2 id="part-2"><a href="#part-2" class="headerlink" title="part 2:"></a>part 2:</h2><p>​        为了分屏，上午买了个连接线，傍晚催着单，终于送来了，一看是连电视机显示屏的，爷✌吐了🤮!!!幸好跑出去刷圈，运气比较好，留意了两家电脑店。第一家没有卖的，第二家被我逮着了，搞了个hdmi—vga，回来之后好像转运了，一直卡死的hexo init终于加载了出来，屏幕也分的很爽，有了点极客的赶脚。虽然之后还是Error连连，但是还好都被我克服了，一个一个ERROR地百度啊，一个一个地csdn啊，真的是哭了孩子了！一直搞到深夜🌉真幸福！</p>
+<h2 id="part-3："><a href="#part-3：" class="headerlink" title="part 3："></a>part 3：</h2><p>​         已经凌晨了，但是我主题还没有做出来，我的博客还是裸体，呃呃！在网上找了资源，找到了最喜欢的butterfly theme ，很nice！装了之后，虽然也有很多error，但还好都被我解决了！世上无errors，只要肯钻研！！！此时写博客的我，身体：“好累😩！”脑袋：”我还可以再继续呢！”此时此刻，北京时间4：05，可是我依然不感觉困😴，这大概就是上瘾了。加油吧，人生就是拿来拼的！</p>
+<p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fp0.ifengimg.com%2Fpmop%2F2018%2F1003%2F72A545B218B303276EE69E5EEEFCEB21D9F77378_size17_w500_h288.jpeg&refer=http%3A%2F%2Fp0.ifengimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1615027424&t=23abc7f7b0c9072306f4727f3d0b571e" alt="image text"></p>
+]]></content>
+      <categories>
+        <category>Daily</category>
+      </categories>
+  </entry>
+  <entry>
     <title>ZHJ&#39;S Diary</title>
     <url>/2021/02/07/%E6%97%A5%E8%AE%B0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>[TOC]</p>
@@ -453,31 +478,6 @@
 <p>6.下载好了Photoshop，还用了一下，还可以，虽然不精通。</p>
 <h2 id="总结：-3"><a href="#总结：-3" class="headerlink" title="总结："></a>总结：</h2><p>1.今天过得还是很充实的，但是感觉看书的时候心并不是太静，有书的原因，但我认为，更大一部分还是自己的原因。明天继续加油💪。</p>
 <p>2.英语很长时间没碰了······早起早起早起！清晨的时光，是最为宝贵的！提高效率吧！</p>
-]]></content>
-      <categories>
-        <category>Daily</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>The birth of my blog</title>
-    <url>/2021/02/04/the%20birth%20of%20my%20blog/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>   Welcome to zhj’s blog!</p>
-<h2 id="part-1"><a href="#part-1" class="headerlink" title="part 1:"></a>part 1:</h2><p>   第一次真真切切感受到深入一阵天是什么感觉！</p>
-<p>从早上10点开始搞这个玩意，一开始还好，都很顺利，nodejs，</p>
-<p>git按着指导进行，之后···在搭建完了一个localhost：4000本地后，可高兴了。</p>
-<p>可是我万万没想到，这只是噩梦的开始！</p>
-<p>之后的神操作，让我的localhost也出不来了，一个又一个Error出现在我面前，</p>
-<p>我人都傻了·····</p>
-<p>npm -v ; git version;hexo -v ;taobao.org;一遍一遍地敲，原来爷的耐心可以这么好~</p>
-<p>令我记忆深刻的是hexo init！</p>
-<p>这可是个大爹啊！！！</p>
-<p>下载个这小东西，一直给爷卡着，陪着你花了我大半个下午，</p>
-<p>我还在网上直接找了hexo初始化包，可倒好，以为万事大吉了，还是Error。</p>
-<p>好家伙！我直接好家伙！</p>
-<p><img src="https://tse1-mm.cn.bing.net/th/id/OIP.XzLT2SaAHF86NCNY-Y1wzwHaJa?pid=Api&rs=1" alt="image text"></p>
-<h2 id="part-2"><a href="#part-2" class="headerlink" title="part 2:"></a>part 2:</h2><p>​        为了分屏，上午买了个连接线，傍晚催着单，终于送来了，一看是连电视机显示屏的，爷✌吐了🤮!!!幸好跑出去刷圈，运气比较好，留意了两家电脑店。第一家没有卖的，第二家被我逮着了，搞了个hdmi—vga，回来之后好像转运了，一直卡死的hexo init终于加载了出来，屏幕也分的很爽，有了点极客的赶脚。虽然之后还是Error连连，但是还好都被我克服了，一个一个ERROR地百度啊，一个一个地csdn啊，真的是哭了孩子了！一直搞到深夜🌉真幸福！</p>
-<h2 id="part-3："><a href="#part-3：" class="headerlink" title="part 3："></a>part 3：</h2><p>​         已经凌晨了，但是我主题还没有做出来，我的博客还是裸体，呃呃！在网上找了资源，找到了最喜欢的butterfly theme ，很nice！装了之后，虽然也有很多error，但还好都被我解决了！世上无errors，只要肯钻研！！！此时写博客的我，身体：“好累😩！”脑袋：”我还可以再继续呢！”此时此刻，北京时间4：05，可是我依然不感觉困😴，这大概就是上瘾了。加油吧，人生就是拿来拼的！</p>
-<p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fp0.ifengimg.com%2Fpmop%2F2018%2F1003%2F72A545B218B303276EE69E5EEEFCEB21D9F77378_size17_w500_h288.jpeg&refer=http%3A%2F%2Fp0.ifengimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1615027424&t=23abc7f7b0c9072306f4727f3d0b571e" alt="image text"></p>
 ]]></content>
       <categories>
         <category>Daily</category>
