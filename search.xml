@@ -1,6 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title></title>
+    <url>/2021/03/21/JavaDay01/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr>
+<p>title：Java Day01<br>categories：JavaSE<br>cover：<a href="https://pic.netbian.com/uploads/allimg/181112/183201-1542018721c534.jpg">https://pic.netbian.com/uploads/allimg/181112/183201-1542018721c534.jpg</a></p>
+<hr>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;姓名：&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;性别：&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;年龄：&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">    命名规范：</span></span><br><span class="line"><span class="comment">    包名：字母都小写：xxxzzzuuu(全为小写)</span></span><br><span class="line"><span class="comment">    类名，接口名：XxxZzzYyy（首字母大写，驼峰法）</span></span><br><span class="line"><span class="comment">    变量名，方法名：xxxZzzYyy（第一个单词首字母小写，剩下的首字母大写）</span></span><br><span class="line"><span class="comment">    常量名：XXX_YYY_ZZZ（全字母大写，并加下划线）</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+<p>​    public是公共的意思，修饰类；</p>
+<p>​    class是类的意思，作用是定义一个类;</p>
+<p>​    Hello是类名</p>
+<p>​    类名后面的一对{}对其中的内容称为类体{body}</p>
+<p>​    类=类名+类体</p>
+<p>​    类是java程序基本单位，构成程序必须要有一个类。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span> </span>&#123;</span><br></pre></td></tr></table></figure>
+<p> /*</p>
+<p>​      下面是一个方法的定义，方法是java程序的一个独立的功能单位。</p>
+<p>​        public表示方法是公共方法</p>
+<p>​        static修饰符，表示方法为静态方法</p>
+<p>​        void是空的意思，表示方法无返回值</p>
+<p>​        main是方法名 </p>
+<p>​        (string[] args）是方法的参数列表</p>
+<p>​        参数后面的一对（）及其中的内容方法体</p>
+<p>​        方法=方法头（方法签名）+方法体</p>
+<p>​    */</p>
+<p>​    // 主方法</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="string">&quot;java i love you &quot;</span>);</span><br><span class="line"></span><br><span class="line">System.out.println(<span class="string">&quot;cetenses!&quot;</span>);</span><br></pre></td></tr></table></figure>
+<p>//  语句是java程序的最小执行单位</p>
+<p>//  这是一个打印语句，作用是在控制台上打印输出一段内容</p>
+<p>//  ; 结尾</p>
+<h5 id="tip"><a href="#tip" class="headerlink" title="// tip:"></a>// tip:</h5><p>​           1、任何修改都必须及时保存后重新编译程序</p>
+<p>​        // 2.类中可以有多个方法，但方法不能冲突。</p>
+<p>​        // 3.大小写敏感</p>
+<p>​        // 4.没有主方法，所以称为非主类</p>
+<p>​        // 5.多行注释不可嵌套</p>
+]]></content>
+  </entry>
+  <entry>
     <title>CSS—浮动</title>
     <url>/2021/02/06/css%E4%B9%8B%E6%B5%AE%E5%8A%A8/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="1-浮动（float）"><a href="#1-浮动（float）" class="headerlink" title="1.浮动（float）"></a>1.浮动（float）</h2><p>网络布局的核心：用css来摆放盒子！</p>
@@ -139,41 +176,59 @@
       </categories>
   </entry>
   <entry>
-    <title></title>
-    <url>/2021/03/21/JavaDay01/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr>
-<p>title：Java Day01<br>categories：JavaSE<br>cover：<a href="https://pic.netbian.com/uploads/allimg/181112/183201-1542018721c534.jpg">https://pic.netbian.com/uploads/allimg/181112/183201-1542018721c534.jpg</a></p>
-<hr>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;姓名：&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;性别：&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;年龄：&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">    命名规范：</span></span><br><span class="line"><span class="comment">    包名：字母都小写：xxxzzzuuu(全为小写)</span></span><br><span class="line"><span class="comment">    类名，接口名：XxxZzzYyy（首字母大写，驼峰法）</span></span><br><span class="line"><span class="comment">    变量名，方法名：xxxZzzYyy（第一个单词首字母小写，剩下的首字母大写）</span></span><br><span class="line"><span class="comment">    常量名：XXX_YYY_ZZZ（全字母大写，并加下划线）</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
-<p>​    public是公共的意思，修饰类；</p>
-<p>​    class是类的意思，作用是定义一个类;</p>
-<p>​    Hello是类名</p>
-<p>​    类名后面的一对{}对其中的内容称为类体{body}</p>
-<p>​    类=类名+类体</p>
-<p>​    类是java程序基本单位，构成程序必须要有一个类。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span> </span>&#123;</span><br></pre></td></tr></table></figure>
-<p> /*</p>
-<p>​      下面是一个方法的定义，方法是java程序的一个独立的功能单位。</p>
-<p>​        public表示方法是公共方法</p>
-<p>​        static修饰符，表示方法为静态方法</p>
-<p>​        void是空的意思，表示方法无返回值</p>
-<p>​        main是方法名 </p>
-<p>​        (string[] args）是方法的参数列表</p>
-<p>​        参数后面的一对（）及其中的内容方法体</p>
-<p>​        方法=方法头（方法签名）+方法体</p>
-<p>​    */</p>
-<p>​    // 主方法</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span></span><br></pre></td></tr></table></figure>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="string">&quot;java i love you &quot;</span>);</span><br><span class="line"></span><br><span class="line">System.out.println(<span class="string">&quot;cetenses!&quot;</span>);</span><br></pre></td></tr></table></figure>
-<p>//  语句是java程序的最小执行单位</p>
-<p>//  这是一个打印语句，作用是在控制台上打印输出一段内容</p>
-<p>//  ; 结尾</p>
-<h5 id="tip"><a href="#tip" class="headerlink" title="// tip:"></a>// tip:</h5><p>​           1、任何修改都必须及时保存后重新编译程序</p>
-<p>​        // 2.类中可以有多个方法，但方法不能冲突。</p>
-<p>​        // 3.大小写敏感</p>
-<p>​        // 4.没有主方法，所以称为非主类</p>
-<p>​        // 5.多行注释不可嵌套</p>
+    <title>学期计划</title>
+    <url>/2021/03/03/my/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="important：学期任务"><a href="#important：学期任务" class="headerlink" title="important：学期任务"></a>important：学期任务</h1><ul>
+<li><p>英语：</p>
+<p>1.听   (四六级/BBC/视听说)</p>
+<p>2.说（B站の口语视频/视听说）</p>
+<ol start="3">
+<li>读（课文/china daliy/真题/其他英文文章）</li>
+</ol>
+</li>
+</ul>
+<ol start="4">
+<li>写   (写作/书写)</li>
+</ol>
+<h1 id="1-本周任务-2021-3-1"><a href="#1-本周任务-2021-3-1" class="headerlink" title="1.本周任务  (2021/3/1)"></a>1.本周任务  (2021/3/1)</h1><ul>
+<li>周末：策划案+ppt+原创性声明</li>
+<li>高数作业（周五之前）</li>
+</ul>
+<h3 id="评价："><a href="#评价：" class="headerlink" title="评价："></a>评价：</h3><h2 id="今日任务（2021-3-3）"><a href="#今日任务（2021-3-3）" class="headerlink" title="今日任务（2021/3/3）"></a>今日任务（2021/3/3）</h2><ul>
+<li><h3 id="计划："><a href="#计划：" class="headerlink" title="计划："></a>计划：</h3><p>1.英语作文（拍照提交）+听写+听力</p>
+<p>2.C++预习+上机</p>
+<p>3.大学物理预习</p>
+</li>
+</ul>
+<h3 id="评价：-1"><a href="#评价：-1" class="headerlink" title="评价："></a>评价：</h3>]]></content>
+      <categories>
+        <category>school life</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>The birth of my blog</title>
+    <url>/2021/02/04/the%20birth%20of%20my%20blog/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>   Welcome to zhj’s blog!</p>
+<h2 id="part-1"><a href="#part-1" class="headerlink" title="part 1:"></a>part 1:</h2><p>   第一次真真切切感受到深入一阵天是什么感觉！</p>
+<p>从早上10点开始搞这个玩意，一开始还好，都很顺利，nodejs，</p>
+<p>git按着指导进行，之后···在搭建完了一个localhost：4000本地后，可高兴了。</p>
+<p>可是我万万没想到，这只是噩梦的开始！</p>
+<p>之后的神操作，让我的localhost也出不来了，一个又一个Error出现在我面前，</p>
+<p>我人都傻了·····</p>
+<p>npm -v ; git version;hexo -v ;taobao.org;一遍一遍地敲，原来爷的耐心可以这么好~</p>
+<p>令我记忆深刻的是hexo init！</p>
+<p>这可是个大爹啊！！！</p>
+<p>下载个这小东西，一直给爷卡着，陪着你花了我大半个下午，</p>
+<p>我还在网上直接找了hexo初始化包，可倒好，以为万事大吉了，还是Error。</p>
+<p>好家伙！我直接好家伙！</p>
+<p><img src="https://tse1-mm.cn.bing.net/th/id/OIP.XzLT2SaAHF86NCNY-Y1wzwHaJa?pid=Api&rs=1" alt="image text"></p>
+<h2 id="part-2"><a href="#part-2" class="headerlink" title="part 2:"></a>part 2:</h2><p>​        为了分屏，上午买了个连接线，傍晚催着单，终于送来了，一看是连电视机显示屏的，爷✌吐了🤮!!!幸好跑出去刷圈，运气比较好，留意了两家电脑店。第一家没有卖的，第二家被我逮着了，搞了个hdmi—vga，回来之后好像转运了，一直卡死的hexo init终于加载了出来，屏幕也分的很爽，有了点极客的赶脚。虽然之后还是Error连连，但是还好都被我克服了，一个一个ERROR地百度啊，一个一个地csdn啊，真的是哭了孩子了！一直搞到深夜🌉真幸福！</p>
+<h2 id="part-3："><a href="#part-3：" class="headerlink" title="part 3："></a>part 3：</h2><p>​         已经凌晨了，但是我主题还没有做出来，我的博客还是裸体，呃呃！在网上找了资源，找到了最喜欢的butterfly theme ，很nice！装了之后，虽然也有很多error，但还好都被我解决了！世上无errors，只要肯钻研！！！此时写博客的我，身体：“好累😩！”脑袋：”我还可以再继续呢！”此时此刻，北京时间4：05，可是我依然不感觉困😴，这大概就是上瘾了。加油吧，人生就是拿来拼的！</p>
+<p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fp0.ifengimg.com%2Fpmop%2F2018%2F1003%2F72A545B218B303276EE69E5EEEFCEB21D9F77378_size17_w500_h288.jpeg&refer=http%3A%2F%2Fp0.ifengimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1615027424&t=23abc7f7b0c9072306f4727f3d0b571e" alt="image text"></p>
 ]]></content>
+      <categories>
+        <category>Daily</category>
+      </categories>
   </entry>
   <entry>
     <title>CSS—盒子模型</title>
@@ -392,61 +447,6 @@
 ]]></content>
       <categories>
         <category>CSS</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>学期计划</title>
-    <url>/2021/03/03/my/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="important：学期任务"><a href="#important：学期任务" class="headerlink" title="important：学期任务"></a>important：学期任务</h1><ul>
-<li><p>英语：</p>
-<p>1.听   (四六级/BBC/视听说)</p>
-<p>2.说（B站の口语视频/视听说）</p>
-<ol start="3">
-<li>读（课文/china daliy/真题/其他英文文章）</li>
-</ol>
-</li>
-</ul>
-<ol start="4">
-<li>写   (写作/书写)</li>
-</ol>
-<h1 id="1-本周任务-2021-3-1"><a href="#1-本周任务-2021-3-1" class="headerlink" title="1.本周任务  (2021/3/1)"></a>1.本周任务  (2021/3/1)</h1><ul>
-<li>周末：策划案+ppt+原创性声明</li>
-<li>高数作业（周五之前）</li>
-</ul>
-<h3 id="评价："><a href="#评价：" class="headerlink" title="评价："></a>评价：</h3><h2 id="今日任务（2021-3-3）"><a href="#今日任务（2021-3-3）" class="headerlink" title="今日任务（2021/3/3）"></a>今日任务（2021/3/3）</h2><ul>
-<li><h3 id="计划："><a href="#计划：" class="headerlink" title="计划："></a>计划：</h3><p>1.英语作文（拍照提交）+听写+听力</p>
-<p>2.C++预习+上机</p>
-<p>3.大学物理预习</p>
-</li>
-</ul>
-<h3 id="评价：-1"><a href="#评价：-1" class="headerlink" title="评价："></a>评价：</h3>]]></content>
-      <categories>
-        <category>school life</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>The birth of my blog</title>
-    <url>/2021/02/04/the%20birth%20of%20my%20blog/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>   Welcome to zhj’s blog!</p>
-<h2 id="part-1"><a href="#part-1" class="headerlink" title="part 1:"></a>part 1:</h2><p>   第一次真真切切感受到深入一阵天是什么感觉！</p>
-<p>从早上10点开始搞这个玩意，一开始还好，都很顺利，nodejs，</p>
-<p>git按着指导进行，之后···在搭建完了一个localhost：4000本地后，可高兴了。</p>
-<p>可是我万万没想到，这只是噩梦的开始！</p>
-<p>之后的神操作，让我的localhost也出不来了，一个又一个Error出现在我面前，</p>
-<p>我人都傻了·····</p>
-<p>npm -v ; git version;hexo -v ;taobao.org;一遍一遍地敲，原来爷的耐心可以这么好~</p>
-<p>令我记忆深刻的是hexo init！</p>
-<p>这可是个大爹啊！！！</p>
-<p>下载个这小东西，一直给爷卡着，陪着你花了我大半个下午，</p>
-<p>我还在网上直接找了hexo初始化包，可倒好，以为万事大吉了，还是Error。</p>
-<p>好家伙！我直接好家伙！</p>
-<p><img src="https://tse1-mm.cn.bing.net/th/id/OIP.XzLT2SaAHF86NCNY-Y1wzwHaJa?pid=Api&rs=1" alt="image text"></p>
-<h2 id="part-2"><a href="#part-2" class="headerlink" title="part 2:"></a>part 2:</h2><p>​        为了分屏，上午买了个连接线，傍晚催着单，终于送来了，一看是连电视机显示屏的，爷✌吐了🤮!!!幸好跑出去刷圈，运气比较好，留意了两家电脑店。第一家没有卖的，第二家被我逮着了，搞了个hdmi—vga，回来之后好像转运了，一直卡死的hexo init终于加载了出来，屏幕也分的很爽，有了点极客的赶脚。虽然之后还是Error连连，但是还好都被我克服了，一个一个ERROR地百度啊，一个一个地csdn啊，真的是哭了孩子了！一直搞到深夜🌉真幸福！</p>
-<h2 id="part-3："><a href="#part-3：" class="headerlink" title="part 3："></a>part 3：</h2><p>​         已经凌晨了，但是我主题还没有做出来，我的博客还是裸体，呃呃！在网上找了资源，找到了最喜欢的butterfly theme ，很nice！装了之后，虽然也有很多error，但还好都被我解决了！世上无errors，只要肯钻研！！！此时写博客的我，身体：“好累😩！”脑袋：”我还可以再继续呢！”此时此刻，北京时间4：05，可是我依然不感觉困😴，这大概就是上瘾了。加油吧，人生就是拿来拼的！</p>
-<p><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fp0.ifengimg.com%2Fpmop%2F2018%2F1003%2F72A545B218B303276EE69E5EEEFCEB21D9F77378_size17_w500_h288.jpeg&refer=http%3A%2F%2Fp0.ifengimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1615027424&t=23abc7f7b0c9072306f4727f3d0b571e" alt="image text"></p>
-]]></content>
-      <categories>
-        <category>Daily</category>
       </categories>
   </entry>
   <entry>
