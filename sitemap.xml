@@ -9,6 +9,20 @@
   </url>
   
   <url>
+    <loc>http://example.com/2021/02/07/%E6%97%A5%E8%AE%B0/</loc>
+    
+    <lastmod>2021-03-21</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://example.com/2021/02/06/css%E4%B9%8B%E6%B5%AE%E5%8A%A8/</loc>
+    
+    <lastmod>2021-03-21</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://example.com/2021/02/04/css%E4%B9%8B%E7%9B%92%E6%A8%A1%E5%9E%8B/</loc>
     
     <lastmod>2021-03-21</lastmod>
@@ -30,20 +44,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/2021/02/07/%E6%97%A5%E8%AE%B0/</loc>
-    
-    <lastmod>2021-02-15</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://example.com/2021/02/06/css%E4%B9%8B%E6%B5%AE%E5%8A%A8/</loc>
-    
-    <lastmod>2021-02-08</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://example.com/2021/02/04/the%20birth%20of%20my%20blog/</loc>
     
     <lastmod>2021-02-06</lastmod>
@@ -60,6 +60,13 @@
 
   
 
+  
+  <url>
+    <loc>http://example.com/categories/JavaSE/</loc>
+    <lastmod>2021-03-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
   <url>
     <loc>http://example.com/categories/CSS/</loc>

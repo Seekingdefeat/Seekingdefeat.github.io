@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title></title>
+    <title>JavaDay01</title>
     <url>/2021/03/21/JavaDay01/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr>
-<p>title： Java Day01<br>categories： JavaSE<br>cover： <a href="https://pic.netbian.com/uploads/allimg/181112/183201-1542018721c534.jpg">https://pic.netbian.com/uploads/allimg/181112/183201-1542018721c534.jpg</a></p>
-<hr>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;姓名：&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;性别：&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;年龄：&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">    命名规范：</span></span><br><span class="line"><span class="comment">    包名：字母都小写：xxxzzzuuu(全为小写)</span></span><br><span class="line"><span class="comment">    类名，接口名：XxxZzzYyy（首字母大写，驼峰法）</span></span><br><span class="line"><span class="comment">    变量名，方法名：xxxZzzYyy（第一个单词首字母小写，剩下的首字母大写）</span></span><br><span class="line"><span class="comment">    常量名：XXX_YYY_ZZZ（全字母大写，并加下划线）</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hello</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;姓名：&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;性别：&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;年龄：&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">    命名规范：</span></span><br><span class="line"><span class="comment">    包名：字母都小写：xxxzzzuuu(全为小写)</span></span><br><span class="line"><span class="comment">    类名，接口名：XxxZzzYyy（首字母大写，驼峰法）</span></span><br><span class="line"><span class="comment">    变量名，方法名：xxxZzzYyy（第一个单词首字母小写，剩下的首字母大写）</span></span><br><span class="line"><span class="comment">    常量名：XXX_YYY_ZZZ（全字母大写，并加下划线）</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
 <p>​    public是公共的意思，修饰类；</p>
 <p>​    class是类的意思，作用是定义一个类;</p>
 <p>​    Hello是类名</p>
@@ -36,6 +33,9 @@
 <p>​        // 4.没有主方法，所以称为非主类</p>
 <p>​        // 5.多行注释不可嵌套</p>
 ]]></content>
+      <categories>
+        <category>JavaSE</category>
+      </categories>
   </entry>
   <entry>
     <title>CSS—浮动</title>
