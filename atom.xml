@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-03-12T15:10:39.354Z</updated>
+  <updated>2021-03-03T15:38:02.292Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,26 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="http://example.com/2021/03/12/%E7%88%AC%E8%99%AB/"/>
-    <id>http://example.com/2021/03/12/%E7%88%AC%E8%99%AB/</id>
-    <published>2021-03-12T15:08:25.168Z</published>
-    <updated>2021-03-12T15:10:39.354Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="response-encoding-‘utf-8’"><a href="#response-encoding-‘utf-8’" class="headerlink" title="response.encoding = ‘utf-8’"></a>response.encoding = ‘utf-8’</h1><h1 id="打印源码的str类型数据"><a href="#打印源码的str类型数据" class="headerlink" title="打印源码的str类型数据"></a>打印源码的str类型数据</h1><h1 id="print-response-text"><a href="#print-response-text" class="headerlink" title="print(response.text)"></a>print(response.text)</h1><h1 id="print-response-encoding"><a href="#print-response-encoding" class="headerlink" title="print(response.encoding)"></a>print(response.encoding)</h1><h1 id="response-content时存储的bytes类型的响应源码，可以进行decode操作"><a href="#response-content时存储的bytes类型的响应源码，可以进行decode操作" class="headerlink" title="response.content时存储的bytes类型的响应源码，可以进行decode操作"></a>response.content时存储的bytes类型的响应源码，可以进行decode操作</h1><h1 id="print-response-content-decode"><a href="#print-response-content-decode" class="headerlink" title="print(response.content.decode())"></a>print(response.content.decode())</h1><h1 id="常见响应对象参数和方法"><a href="#常见响应对象参数和方法" class="headerlink" title="常见响应对象参数和方法"></a>常见响应对象参数和方法</h1><h1 id="响应url"><a href="#响应url" class="headerlink" title="响应url"></a>响应url</h1><h1 id="print-response-url"><a href="#print-response-url" class="headerlink" title="print(response.url)"></a>print(response.url)</h1><h1 id="状态码"><a href="#状态码" class="headerlink" title="状态码"></a>状态码</h1><h1 id="print-response-status-code"><a href="#print-response-status-code" class="headerlink" title="print(response.status_code)"></a>print(response.status_code)</h1><h1 id="请求头"><a href="#请求头" class="headerlink" title="请求头"></a>请求头</h1><h1 id="print-response-request-headers"><a href="#print-response-request-headers" class="headerlink" title="print(response.request.headers)"></a>print(response.request.headers)</h1><h1 id="响应头"><a href="#响应头" class="headerlink" title="响应头"></a>响应头</h1><h1 id="print-response-headers"><a href="#print-response-headers" class="headerlink" title="print(response.headers)"></a>print(response.headers)</h1><h1 id="应答响应设置cookies"><a href="#应答响应设置cookies" class="headerlink" title="应答响应设置cookies"></a>应答响应设置cookies</h1><p>print(response.cookies)</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>功能句写作</title>
