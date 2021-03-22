@@ -308,36 +308,6 @@
       </categories>
   </entry>
   <entry>
-    <title>学期计划</title>
-    <url>/2021/03/03/my/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="important：学期任务"><a href="#important：学期任务" class="headerlink" title="important：学期任务"></a>important：学期任务</h1><ul>
-<li><p>英语：</p>
-<p>1.听   (四六级/BBC/视听说)</p>
-<p>2.说（B站の口语视频/视听说）</p>
-<ol start="3">
-<li>读（课文/china daliy/真题/其他英文文章）</li>
-</ol>
-</li>
-</ul>
-<ol start="4">
-<li>写   (写作/书写)</li>
-</ol>
-<h1 id="1-本周任务-2021-3-1"><a href="#1-本周任务-2021-3-1" class="headerlink" title="1.本周任务  (2021/3/1)"></a>1.本周任务  (2021/3/1)</h1><ul>
-<li>周末：策划案+ppt+原创性声明</li>
-<li>高数作业（周五之前）</li>
-</ul>
-<h3 id="评价："><a href="#评价：" class="headerlink" title="评价："></a>评价：</h3><h2 id="今日任务（2021-3-3）"><a href="#今日任务（2021-3-3）" class="headerlink" title="今日任务（2021/3/3）"></a>今日任务（2021/3/3）</h2><ul>
-<li><h3 id="计划："><a href="#计划：" class="headerlink" title="计划："></a>计划：</h3><p>1.英语作文（拍照提交）+听写+听力</p>
-<p>2.C++预习+上机</p>
-<p>3.大学物理预习</p>
-</li>
-</ul>
-<h3 id="评价：-1"><a href="#评价：-1" class="headerlink" title="评价："></a>评价：</h3>]]></content>
-      <categories>
-        <category>school life</category>
-      </categories>
-  </entry>
-  <entry>
     <title>CSS—浮动</title>
     <url>/2021/02/06/css%E4%B9%8B%E6%B5%AE%E5%8A%A8/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="1-浮动（float）"><a href="#1-浮动（float）" class="headerlink" title="1.浮动（float）"></a>1.浮动（float）</h2><p>网络布局的核心：用css来摆放盒子！</p>
@@ -498,6 +468,36 @@
 ]]></content>
       <categories>
         <category>Daily</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>学期计划</title>
+    <url>/2021/03/03/my/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="important：学期任务"><a href="#important：学期任务" class="headerlink" title="important：学期任务"></a>important：学期任务</h1><ul>
+<li><p>英语：</p>
+<p>1.听   (四六级/BBC/视听说)</p>
+<p>2.说（B站の口语视频/视听说）</p>
+<ol start="3">
+<li>读（课文/china daliy/真题/其他英文文章）</li>
+</ol>
+</li>
+</ul>
+<ol start="4">
+<li>写   (写作/书写)</li>
+</ol>
+<h1 id="1-本周任务-2021-3-1"><a href="#1-本周任务-2021-3-1" class="headerlink" title="1.本周任务  (2021/3/1)"></a>1.本周任务  (2021/3/1)</h1><ul>
+<li>周末：策划案+ppt+原创性声明</li>
+<li>高数作业（周五之前）</li>
+</ul>
+<h3 id="评价："><a href="#评价：" class="headerlink" title="评价："></a>评价：</h3><h2 id="今日任务（2021-3-3）"><a href="#今日任务（2021-3-3）" class="headerlink" title="今日任务（2021/3/3）"></a>今日任务（2021/3/3）</h2><ul>
+<li><h3 id="计划："><a href="#计划：" class="headerlink" title="计划："></a>计划：</h3><p>1.英语作文（拍照提交）+听写+听力</p>
+<p>2.C++预习+上机</p>
+<p>3.大学物理预习</p>
+</li>
+</ul>
+<h3 id="评价：-1"><a href="#评价：-1" class="headerlink" title="评价："></a>评价：</h3>]]></content>
+      <categories>
+        <category>school life</category>
       </categories>
   </entry>
   <entry>
