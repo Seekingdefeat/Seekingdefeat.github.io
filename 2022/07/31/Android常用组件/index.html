@@ -1,0 +1,585 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Android常用组件 | 烟寒乂品</title><meta name="author" content="HaoJie"><meta name="copyright" content="HaoJie"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Android常用组件前言认知方法 what why how  什么是程序 what 代码 + 资源   why 改变世界   how 知识 + 经验    用户视角 what 界面  互动  记忆   why 工具  视频  游戏   how 应用商店 搜索引擎 官网下载 三方引流    基础组件需求需求-图片浏览器  实现一个图片浏览APP（Activity + Fragment） 相册页面">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android常用组件">
+<meta property="og:url" content="http://example.com/2022/07/31/Android%E5%B8%B8%E7%94%A8%E7%BB%84%E4%BB%B6/index.html">
+<meta property="og:site_name" content="烟寒乂品">
+<meta property="og:description" content="Android常用组件前言认知方法 what why how  什么是程序 what 代码 + 资源   why 改变世界   how 知识 + 经验    用户视角 what 界面  互动  记忆   why 工具  视频  游戏   how 应用商店 搜索引擎 官网下载 三方引流    基础组件需求需求-图片浏览器  实现一个图片浏览APP（Activity + Fragment） 相册页面">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/t3.jpg">
+<meta property="article:published_time" content="2022-07-31T14:02:54.000Z">
+<meta property="article:modified_time" content="2022-07-31T16:21:16.076Z">
+<meta property="article:author" content="HaoJie">
+<meta property="article:tag" content="android">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/t3.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2022/07/31/Android%E5%B8%B8%E7%94%A8%E7%BB%84%E4%BB%B6/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":230},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Android常用组件',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-08-01 00:21:16'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/self/transpancy.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+  window.addEventListener('load',() => { preloader.endLoading() })
+
+  if (true) {
+    document.addEventListener('pjax:send', () => { preloader.initLoading() })
+    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+  }
+})()</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/head.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/t3.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="烟寒乂品"><span class="site-name">烟寒乂品</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Android常用组件</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-07-31T14:02:54.000Z" title="发表于 2022-07-31 22:02:54">2022-07-31</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-07-31T16:21:16.076Z" title="更新于 2022-08-01 00:21:16">2022-08-01</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/android/">android</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>3分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Android常用组件"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="Android常用组件"><a href="#Android常用组件" class="headerlink" title="Android常用组件"></a>Android常用组件</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h3 id="认知方法"><a href="#认知方法" class="headerlink" title="认知方法"></a>认知方法</h3><ul>
+<li>what</li>
+<li>why</li>
+<li>how</li>
+</ul>
+<h3 id="什么是程序"><a href="#什么是程序" class="headerlink" title="什么是程序"></a>什么是程序</h3><ul>
+<li>what<ul>
+<li>代码 + 资源</li>
+</ul>
+</li>
+<li>why<ul>
+<li>改变世界</li>
+</ul>
+</li>
+<li>how<ul>
+<li>知识 + 经验</li>
+</ul>
+</li>
+</ul>
+<h3 id="用户视角"><a href="#用户视角" class="headerlink" title="用户视角"></a>用户视角</h3><ul>
+<li>what<ul>
+<li>界面 </li>
+<li>互动 </li>
+<li>记忆</li>
+</ul>
+</li>
+<li>why<ul>
+<li>工具 </li>
+<li>视频 </li>
+<li>游戏</li>
+</ul>
+</li>
+<li>how<ul>
+<li>应用商店</li>
+<li>搜索引擎</li>
+<li>官网下载</li>
+<li>三方引流</li>
+</ul>
+</li>
+</ul>
+<h2 id="基础组件"><a href="#基础组件" class="headerlink" title="基础组件"></a>基础组件</h2><h3 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h3><p>需求-图片浏览器</p>
+<ul>
+<li>实现一个图片浏览APP（Activity + Fragment）</li>
+<li>相册页面 + 大图页面 + 调用相机 （Intent）</li>
+<li>旋转屏幕场景 （Activity生命周期）</li>
+<li>内置升级功能（Service使用）</li>
+<li>单一首页（SingleTask）</li>
+<li>相关照片（SingleTop）</li>
+<li>扫描所有照片（ContentProvider）</li>
+<li>提供照片选择能力给系统（Intent）</li>
+</ul>
+<p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\1659276922323.png" alt="1659276922323"></p>
+<h3 id="界面组件"><a href="#界面组件" class="headerlink" title="界面组件"></a>界面组件</h3><ul>
+<li><p>Activity </p>
+<ul>
+<li>what</li>
+</ul>
+<p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\1659195347602.png" alt="1659195347602"></p>
+<ul>
+<li>why</li>
+</ul>
+<p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\1659195285061.png" alt="1659195285061"></p>
+<ul>
+<li><p>how</p>
+<ul>
+<li>基本用法</li>
+</ul>
+<p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\1659276954948.png" alt="1659276954948"></p>
+<ul>
+<li><p>生命周期</p>
+<ul>
+<li>onCreate()：创建时回调，一般在此创建视图和绑定数据</li>
+<li>onStart()：已启动，即将进入前台</li>
+<li>onResume()：与用户开始交互，位于Activity栈顶</li>
+<li>onPause()：Activity失去焦点或已暂停，Activity界面部分可见，下一个生命周期是onResume()或onStop()</li>
+<li>onStop()：Activity不再可见，下一个回调是onRestart()或onStart()</li>
+<li>onDestory()：销毁Activity，释放该Activity的所有资源</li>
+<li>onSaveInstanceState()：在非正常关闭时回调，用于保存数据，不支持持久化数据</li>
+<li>onRestoreInstanceState()&#x2F;onCreate()：用于恢复数据</li>
+</ul>
+</li>
+<li><p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\1659277970205.png" alt="1659277970205"></p>
+</li>
+<li><p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\1659278019755.png" alt="1659278019755"></p>
+</li>
+<li><p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\1659278067698.png" alt="1659278067698"></p>
+</li>
+</ul>
+</li>
+<li><p>生命周期小结</p>
+</li>
+</ul>
+<p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\1659278260249.png" alt="1659278260249"></p>
+<ul>
+<li>启动模式<ul>
+<li>standard：默认模式，允许重复<ul>
+<li><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\1659278405707.png" alt="1659278405707"></li>
+</ul>
+</li>
+<li>singleTop：不允许连续重复<ul>
+<li><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\1659278389099.png" alt="1659278389099"></li>
+</ul>
+</li>
+<li>singleTask：不允许同个栈内重复<ul>
+<li><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\1659278373188.png" alt="1659278373188"></li>
+</ul>
+</li>
+<li>singleInstance：整个系统不允许重复<ul>
+<li><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\1659278448804.png" alt="1659278448804"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>启动模式总结<ul>
+<li><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\1659278476645.png" alt="1659278476645"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Fragment</p>
+<ul>
+<li><p>特点：</p>
+<ul>
+<li>碎片化</li>
+<li>速度快</li>
+</ul>
+</li>
+<li><p>基本用法</p>
+<ol>
+<li>创建Fragment布局文件</li>
+<li>创建Fragment子类，加载布局文件</li>
+<li>Activity加载Fragment<ol>
+<li>静态加载：布局中绑定</li>
+<li>动态加载：FragmentManager加载</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>生命周期</p>
+<ul>
+<li>onAttach()：Fragment和Activity建立关联时调用</li>
+<li>onCreateView()：当Fragment创建视图时调用</li>
+<li>onActivityCreated()：Activity的onCreate()方法已返回调用</li>
+<li>onDestroyView()：当Fragment中的视图被移除时调用</li>
+<li>onDetach()：Fragment和Activity取消关联时调用</li>
+</ul>
+<p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\1659278900202.png" alt="1659278900202"></p>
+</li>
+<li><p>与Activity交互</p>
+<ul>
+<li>组件获取<ol>
+<li>Fragment获取Activity中的组件：getActivity().findViewById(R.id.xxx)</li>
+<li>Activity获取Fragment中的组件：getFragmentManager.findFragmentById(R.id.fragment_xxx)</li>
+</ol>
+</li>
+<li>数据传递<ol>
+<li>Activity传数据给Fragment: setArguments(Bundle bundle)</li>
+<li>Fragment传递数据给Activity: <ol>
+<li>通过对象直接传递(方法调用&#x2F;接口调用)</li>
+<li>通过viewmodel&#x2F;handler&#x2F;broadcast&#x2F;eventbus等通信</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>Fragment总结</p>
+<p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\1659279165812.png" alt="1659279165812"></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="服务组件"><a href="#服务组件" class="headerlink" title="服务组件"></a>服务组件</h3><ul>
+<li><p>Service</p>
+<ul>
+<li><p>基本用法</p>
+<ol>
+<li>注册：AndroidManifest中使用&lt;service…&#x2F;&gt;标签</li>
+<li>创建：建立相应的Service实现类</li>
+<li>加载：startService() &#x2F; bindService()</li>
+</ol>
+</li>
+<li><p>生命周期</p>
+<ul>
+<li>onStart()</li>
+<li>onBind()</li>
+</ul>
+</li>
+<li><p>onCreate()</p>
+<ul>
+<li>onDestroy()</li>
+</ul>
+<p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\1659279397480.png" alt="1659279397480"></p>
+</li>
+<li><p>与Activity通信</p>
+<ol>
+<li>定义Binder子类，并实现getService()方法，返回Service对象</li>
+<li>实现Service类onBind()方法，返回上述Binder对象</li>
+<li>实例化ServiceConnection对象，实现onServiceConnected()方法，从中获取Service实例</li>
+<li>Activity中调用bindService()方法，并传递步骤3的ServiceConnection对象，将流程跑起来</li>
+<li>Activity既可以通过调用Service实例中的方法进行直接通信</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="广播组件"><a href="#广播组件" class="headerlink" title="广播组件"></a>广播组件</h3><ul>
+<li>BroadCast<ul>
+<li><p>基本用法</p>
+<ul>
+<li>静态广播<ol>
+<li>注册：AndroidManifest中使用&lt;receiver…&#x2F;&gt;&lt;intent-filter…&#x2F;&gt;</li>
+<li>创建：建立相应的BroadcastReceiver实现类</li>
+<li>接收：在步骤2类onReceive()中接收广播</li>
+<li>发送：Context.sengBroadcast()</li>
+</ol>
+</li>
+<li>动态广播<ol>
+<li>注册：Context.registerReceiver()</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>常用系统广播</p>
+<p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\1659281586981.png" alt="1659281586981"></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="数据组件"><a href="#数据组件" class="headerlink" title="数据组件"></a>数据组件</h3><ul>
+<li><p>ContentProvider</p>
+<ul>
+<li><p>基本用法</p>
+<ul>
+<li><p>生产者</p>
+<ol>
+<li><p>注册：AndroidManifest中使用&lt;provider…&#x2F;&gt;</p>
+<p>属性：authorities&#x2F;exported&#x2F;readPermission&#x2F;writePermission</p>
+</li>
+<li><p>创建：建立相应的ContentProvider实现类</p>
+<p>方法：onCreate&#x2F;getType&#x2F;inset&#x2F;delete&#x2F;udate&#x2F;query</p>
+</li>
+</ol>
+</li>
+<li><p>消费者</p>
+<ol>
+<li><p>声明：AndroidManifest中声明权限</p>
+</li>
+<li><p>使用：context。getContentResolver()</p>
+<p>方法：insert&#x2F;delete&#x2F;update&#x2F;query</p>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="意图组件"><a href="#意图组件" class="headerlink" title="意图组件"></a>意图组件</h3><ul>
+<li><p>Intent</p>
+<ol>
+<li>Context.startActivity(Intent)</li>
+<li>Context.startService(Intent)</li>
+<li>Context.sendBroadcast(Intent)</li>
+</ol>
+<p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\1659282114260.png" alt="1659282114260"></p>
+<ul>
+<li><p>基本用法</p>
+<ol>
+<li><p>显式Intent</p>
+<p>setComponent &#x2F; setClass指定具体类</p>
+</li>
+<li><p>隐式Intent</p>
+<p>Action(动作) Data(数据) Category(类别) Type(数据类型) Component(组件) Extra(扩展信息) Flag(标志位)</p>
+</li>
+</ol>
+</li>
+<li><p>系统能力</p>
+<p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\1659282338462.png" alt="1659282338462"></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="Android通信组件"><a href="#Android通信组件" class="headerlink" title="Android通信组件"></a>Android通信组件</h2><ul>
+<li><p>Handler</p>
+<ul>
+<li><p>基本用法</p>
+<ol>
+<li>创建：新建Handler，实现handleMessage(Message)</li>
+<li>构造Message：what &#x2F; setData()</li>
+<li>发送：子线程调用Handler.setMessage(Message)发送Message</li>
+<li>处理：在Handler的handleMessage(Message msg)主线程更新UI</li>
+</ol>
+</li>
+<li><p>核心原理</p>
+<p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\1659282536629.png" alt="1659282536629"></p>
+</li>
+</ul>
+</li>
+<li><p>Binder</p>
+<ul>
+<li><p>常用IPC方案对比</p>
+<p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\1659282589415.png" alt="1659282589415"></p>
+</li>
+<li><p>为什么不用共享内存</p>
+<p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\1659282616967.png" alt="1659282616967"></p>
+</li>
+<li><p>基本用法</p>
+<ul>
+<li>服务端<ol>
+<li>定义一个AIDL文件</li>
+<li>实现描述的接口，编写service</li>
+<li>如果有实体类，则需要提供实体类(jar包形式)</li>
+</ol>
+</li>
+<li>客户端<ol>
+<li>拿到AIDL文件</li>
+<li>绑定服务，获得接口持有对象</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>核心原理</p>
+<p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\1659282707287.png" alt="1659282707287"></p>
+<p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\1659282720146.png" alt="1659282720146"></p>
+</li>
+<li><p>App启动</p>
+<p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\1659282745737.png" alt="1659282745737"></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p><img src="C:\Users\19468\AppData\Roaming\Typora\typora-user-images\1659282770509.png" alt="1659282770509"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">HaoJie</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2022/07/31/Android%E5%B8%B8%E7%94%A8%E7%BB%84%E4%BB%B6/">http://example.com/2022/07/31/Android%E5%B8%B8%E7%94%A8%E7%BB%84%E4%BB%B6/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">烟寒乂品</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/android/">android</a></div><div class="post_share"><div class="social-share" data-image="/img/t3.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/06/25/hello-world/" title="Hello World"><img class="cover" src="/img/t1.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Hello World</div></div></a></div><div class="next-post pull-right"><a href="/2022/07/24/%E6%AF%8F%E6%97%A5/" title="扎根"><img class="cover" src="/img/t6.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">扎根</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/07/22/android%E5%9F%BA%E7%A1%80/" title="Android 系统及客户端概览"><img class="cover" src="/img/t6.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-07-22</div><div class="title">Android 系统及客户端概览</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/head.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">HaoJie</div><div class="author-info__description">我亦无他,唯手熟尔</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Seekingdefeat" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:1946877869@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Android%E5%B8%B8%E7%94%A8%E7%BB%84%E4%BB%B6"><span class="toc-number">1.</span> <span class="toc-text">Android常用组件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.1.</span> <span class="toc-text">前言</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%A4%E7%9F%A5%E6%96%B9%E6%B3%95"><span class="toc-number">1.1.1.</span> <span class="toc-text">认知方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E7%A8%8B%E5%BA%8F"><span class="toc-number">1.1.2.</span> <span class="toc-text">什么是程序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E8%A7%86%E8%A7%92"><span class="toc-number">1.1.3.</span> <span class="toc-text">用户视角</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E7%BB%84%E4%BB%B6"><span class="toc-number">1.2.</span> <span class="toc-text">基础组件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9C%80%E6%B1%82"><span class="toc-number">1.2.1.</span> <span class="toc-text">需求</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%95%8C%E9%9D%A2%E7%BB%84%E4%BB%B6"><span class="toc-number">1.2.2.</span> <span class="toc-text">界面组件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E7%BB%84%E4%BB%B6"><span class="toc-number">1.2.3.</span> <span class="toc-text">服务组件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B9%BF%E6%92%AD%E7%BB%84%E4%BB%B6"><span class="toc-number">1.2.4.</span> <span class="toc-text">广播组件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%BB%84%E4%BB%B6"><span class="toc-number">1.2.5.</span> <span class="toc-text">数据组件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%84%8F%E5%9B%BE%E7%BB%84%E4%BB%B6"><span class="toc-number">1.2.6.</span> <span class="toc-text">意图组件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Android%E9%80%9A%E4%BF%A1%E7%BB%84%E4%BB%B6"><span class="toc-number">1.3.</span> <span class="toc-text">Android通信组件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">1.4.</span> <span class="toc-text">总结</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2023/06/25/hello-world/" title="Hello World"><img src="/img/t1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2023/06/25/hello-world/" title="Hello World">Hello World</a><time datetime="2023-06-25T02:40:26.078Z" title="发表于 2023-06-25 10:40:26">2023-06-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/07/31/Android%E5%B8%B8%E7%94%A8%E7%BB%84%E4%BB%B6/" title="Android常用组件"><img src="/img/t3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Android常用组件"/></a><div class="content"><a class="title" href="/2022/07/31/Android%E5%B8%B8%E7%94%A8%E7%BB%84%E4%BB%B6/" title="Android常用组件">Android常用组件</a><time datetime="2022-07-31T14:02:54.000Z" title="发表于 2022-07-31 22:02:54">2022-07-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/07/24/%E6%AF%8F%E6%97%A5/" title="扎根"><img src="/img/t6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="扎根"/></a><div class="content"><a class="title" href="/2022/07/24/%E6%AF%8F%E6%97%A5/" title="扎根">扎根</a><time datetime="2022-07-24T09:06:29.000Z" title="发表于 2022-07-24 17:06:29">2022-07-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/07/22/android%E5%9F%BA%E7%A1%80/" title="Android 系统及客户端概览"><img src="/img/t6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Android 系统及客户端概览"/></a><div class="content"><a class="title" href="/2022/07/22/android%E5%9F%BA%E7%A1%80/" title="Android 系统及客户端概览">Android 系统及客户端概览</a><time datetime="2022-07-22T14:02:54.000Z" title="发表于 2022-07-22 22:02:54">2022-07-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/07/19/%E4%BA%BA%E7%94%9F%E6%84%8F%E4%B9%89/" title="人生意义"><img src="/img/t1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="人生意义"/></a><div class="content"><a class="title" href="/2022/07/19/%E4%BA%BA%E7%94%9F%E6%84%8F%E4%B9%89/" title="人生意义">人生意义</a><time datetime="2022-07-19T13:36:36.000Z" title="发表于 2022-07-19 21:36:36">2022-07-19</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('/img/t3.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By HaoJie</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><div class="aplayer no-destroy" data-id="8510304751" data-server="netease" data-type="playlist" data-autoplay="true" data-fixed="true" data-mini="true"> </div><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
