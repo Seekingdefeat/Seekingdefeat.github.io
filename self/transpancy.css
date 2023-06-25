@@ -18,9 +18,3 @@
 	/* 以下代表透明度为0.7 */
 	background: rgba(255,255,255, .0);
 }
-
-@font-face {
-  font-family: 'River';
-  font-display: swap;
-  src: url('River.ttf') format("truetype");
-}
